@@ -61,10 +61,7 @@ with st.sidebar:
     st.caption ("Planificador de viajes en grupo · Big Data · UABC Grupo 361")
     ciudad = st.selectbox ("Ciudad a analizar", ZONAS, index=ZONAS.index ("Santa Barbara") if "Santa Barbara" in ZONAS else 0)
     st.divider ()
-    st.markdown ("**KPIs**")
-    st.markdown ("1. Calificación ponderada → **¿a dónde ir?**\n2. Caminabilidad → **¿cómo moverse?**\n3. Puntualidad → **¿cuándo ir?**")
-    st.divider ()
-    st.caption ("Fuentes: Yelp Open Dataset · U.S. DOT Bureau of Transportation Statistics (2025) · factores de emisión EPA")
+    st.caption ("Fuentes: Yelp · BTS 2025 · EPA")
 
 fila = resumen.set_index ("zona").loc[ciudad]
 n = len (resumen)
@@ -84,70 +81,47 @@ n_vuelos = int (volumen.loc[volumen["tabla"].str.contains ("BTS"), "registros_qu
 n_vuelos_tot = int (volumen.loc[volumen["tabla"].str.contains ("BTS"), "registros_dataset_completo"].iloc[0])
 
 with tp:
-    st.header ("TripSync · Análisis Big Data para planear viajes en grupo")
-    st.markdown ("**Objetivo:** usar datos reales a gran escala para que un grupo de amigos decida **a dónde**, **cómo** y **cuándo** viajar, "
-                 "con menos discusiones y **menor huella de carbono**.")
+    st.header ("TripSync · Big Data")
+    st.markdown ("¿**A dónde**, **cómo** y **cuándo** viajar en grupo, con menos CO₂?")
     a, b, c = st.columns (3)
-    a.metric ("Reseñas analizadas (Yelp)", f"{n_resenas:,}")
-    b.metric ("Vuelos analizados (BTS 2025)", f"{n_vuelos:,}", f"de {n_vuelos_tot:,} en EE. UU.", delta_color="off")
-    c.metric ("Ciudades comparadas", f"{n}")
+    a.metric ("Reseñas analizadas", f"{n_resenas:,}")
+    b.metric ("Vuelos analizados (2025)", f"{n_vuelos:,}")
+    c.metric ("Ciudades", f"{n}")
 
-    st.subheader ("1 · Proceso")
-    pasos = [
-        ("① Selección", "Se evaluaron 5 datasets. Se eligieron **Yelp** (calidad de destinos) y **BTS** (vuelos) porque superan 200 mil registros y cubren las mismas 10 ciudades. OpenFlights se descartó (~82 mil registros)."),
-        ("② Descarga", "Google Colab + Kaggle API (Yelp, ~4 GB) y descarga directa desde BTS (12 meses de 2025). Se filtró a 10 ciudades por **distancia ≤ 40 km** del centro."),
-        ("③ Diagnóstico", "**DuckDB (SQL)** dentro de Python: faltantes, duplicados, atípicos (regla IQR) e inconsistencias. Evidencia guardada en CSV."),
-        ("④ Limpieza", "Imputación justificada, corrección de errores, banderas de atípicos sin borrar datos reales. **0 registros perdidos.** Bitácora de cada acción."),
-        ("⑤ KPIs y dashboard", "Cálculo de 3 KPIs + CO₂ en Colab; dashboard interactivo en **Streamlit + Plotly**, publicado en la web."),
-    ]
-    cols = st.columns (5)
-    for col, (titulo, texto) in zip (cols, pasos):
+    st.subheader ("Proceso")
+    pasos = [("① Datos", "Yelp + BTS (> 200 mil registros)"),
+             ("② Descarga", "Colab + Kaggle API"),
+             ("③ Diagnóstico", "DuckDB (SQL)"),
+             ("④ Limpieza", "0 registros perdidos"),
+             ("⑤ Dashboard", "Streamlit + Plotly")]
+    for col, (t, d) in zip (st.columns (5), pasos):
         with col:
             with st.container (border=True):
-                st.markdown (f"**{titulo}**")
-                st.caption (texto)
+                st.markdown (f"**{t}**")
+                st.caption (d)
 
-    st.subheader ("2 · Limpieza de datos (resumen)")
+    st.subheader ("Limpieza")
     st.markdown (
-        "| Tipo | Ejemplo | Tratamiento |\n|---|---|---|\n"
-        "| **Faltantes** | 92 negocios sin categoría · retrasos vacíos en vuelos cancelados | Imputar \"Sin categoría\" · **no** imputar (el vuelo no llegó) |\n"
-        "| **Imputados** | Votos = -1 · causas de retraso vacías en vuelos a tiempo | Imputar 0 |\n"
-        "| **Atípicos** | Negocios con miles de reseñas · retrasos de hasta 56 h | Conservar con bandera; promedio ponderado y versión recortada al p99 |\n"
-        "| **Inconsistencias** | 1,300+ formas de escribir las ciudades · rutas con 2 distancias | Ciudad por distancia · distancia más frecuente |")
+        "| | Caso | Acción |\n|---|---|---|\n"
+        "| Faltantes | Retraso vacío en vuelos cancelados | No se imputa |\n"
+        "| Imputados | Votos = -1, causas vacías | → 0 |\n"
+        "| Atípicos | Retrasos de hasta 56 h | Se marcan, no se borran |\n"
+        "| Inconsistencias | 1,300+ nombres de ciudad | Se agrupan por distancia |")
 
-    st.subheader ("3 · ¿Por qué estos KPIs?")
+    st.subheader ("KPIs")
     st.markdown (
-        "| KPI | Decisión del grupo | Módulo de TripSync | Por qué este y no otro |\n|---|---|---|---|\n"
-        "| **1. Calificación ponderada** | ¿A dónde ir? | Votación de destino | El promedio simple engaña: un lugar con 3 reseñas pesaría igual que uno con 3,000. La fórmula bayesiana lo corrige |\n"
-        "| **2. Caminabilidad** | ¿Cómo moverse? | Itinerario colaborativo | Mide si los buenos lugares están cerca: menos taxis y autos = menos CO₂ y menos gasto |\n"
-        "| **3. Puntualidad por mes** | ¿Cuándo ir? | Votación de fechas y presupuesto | Retrasos y cancelaciones generan gastos y conflictos imprevistos |")
+        "| KPI | Responde | Módulo TripSync |\n|---|---|---|\n"
+        "| 1 · Calificación ponderada | ¿A dónde? | Votar destino |\n"
+        "| 2 · Caminabilidad | ¿Cómo moverse? | Itinerario · menos CO₂ |\n"
+        "| 3 · Puntualidad | ¿Cuándo? | Votar fechas |")
 
-    st.subheader ("4 · Valor para TripSync")
+    st.subheader ("Conclusiones")
     st.markdown (
-        "- **Decisiones con datos, no con opiniones:** el grupo vota con criterios objetivos y la votación se cierra más rápido.\n"
-        "- **Sugerencias confiables:** solo se recomiendan lugares abiertos y bien calificados.\n"
-        "- **Impacto ambiental:** TripSync puede priorizar destinos caminables y con vuelos más cortos, reduciendo la huella de carbono del viaje.\n"
-        "- **Escalable:** el mismo proceso funciona para cualquier ciudad con datos, gracias a herramientas de Big Data (DuckDB, Parquet).")
-
-    st.subheader ("5 · Conclusiones")
-    st.markdown (
-        f"- **{mejor['zona']}** es el mejor destino integral: lugar promedio {mejor['rank_prom']:.1f} en los 3 KPIs, "
-        f"{mejor['kpi2_pct_caminable']:.0f} % de sus lugares buenos a pie y {mejor['co2_prom_kg_pasajero']:.0f} kg de CO₂ por pasajero para llegar.\n"
-        f"- **Julio es el peor mes para volar** en las {n} ciudades ({mes_global.loc[7]:.1f} % de puntualidad); **septiembre el mejor** ({mes_global.loc[9]:.1f} %). "
-        "TripSync puede sugerir fechas fuera del verano.\n"
-        f"- Los retrasos son **operativos, no del clima**: aerolínea + avión que llega tarde explican ~{causas_op:.0f} % de los minutos de retraso; el clima solo ~{clima:.0f} %.\n"
-        f"- **{peor_amb[0]} y {peor_amb[1]}** combinan baja caminabilidad y más CO₂ para llegar: destinos menos sostenibles.\n"
-        f"- Las calificaciones entre ciudades son parecidas (3.7–3.9 ★), pero por categoría sí cambian: **{cat_prom.index[-1]}** es lo mejor calificado y "
-        f"**{cat_prom.index[0]}** lo peor ({cat_prom.iloc[0]:.2f} ★), así que conviene que el grupo revise bien el hospedaje.\n"
-        "- **Volumen:** sin herramientas de Big Data no sería posible procesar millones de reseñas y vuelos; Excel solo admite ~1 millón de filas.")
-
-    with st.expander ("Limitaciones"):
-        st.markdown (
-            "- BTS solo incluye vuelos dentro de EE. UU.: el KPI 3 mide la confiabilidad del aeropuerto de destino.\n"
-            "- La caminabilidad usa la distancia al centro; no considera banquetas ni transporte público.\n"
-            "- Reseñas de Yelp hasta enero 2022 y vuelos de 2025: se unen por ciudad, no por fecha.\n"
-            "- El CO₂ usa factores promedio del EPA por pasajero-milla.")
-    st.caption ("Herramientas: Python · Google Colab · DuckDB (SQL) · Parquet · Kaggle API · pandas · Plotly · Streamlit · GitHub")
+        f"- **{mejor['zona']}** es el mejor destino integral ({mejor['kpi2_pct_caminable']:.0f} % caminable, {mejor['co2_prom_kg_pasajero']:.0f} kg CO₂).\n"
+        f"- **Julio** es el peor mes para volar ({mes_global.loc[7]:.0f} % puntual); **septiembre** el mejor ({mes_global.loc[9]:.0f} %).\n"
+        f"- Los retrasos son **operativos** (~{causas_op:.0f} %), no por clima (~{clima:.0f} %).\n"
+        f"- **{peor_amb[0]} y {peor_amb[1]}**: menos caminables y más CO₂.\n"
+        f"- **{cat_prom.index[0]}** es lo peor calificado en todas las ciudades.")
 
 with t0:
     st.header (f"{ciudad}")
@@ -161,10 +135,7 @@ with t0:
     c4.metric ("CO₂ promedio para llegar", f"{fila['co2_prom_kg_pasajero']:.0f} kg",
                "por pasajero", delta_color="off")
 
-    st.markdown (
-        f"Mejor mes para volar: **{MESES[int (fila['mejor_mes']) - 1]}** · "
-        f"Peor mes: **{MESES[int (fila['peor_mes']) - 1]}** · "
-        f"{int (fila['lugares']):,} lugares turísticos abiertos con {int (fila['resenas']):,} reseñas")
+    st.caption (f"Mejor mes: {MESES[int (fila['mejor_mes']) - 1]} · Peor mes: {MESES[int (fila['peor_mes']) - 1]}")
 
     st.subheader ("Comparativo de las 10 ciudades")
     tabla = resumen[["zona", "kpi1_calificacion_ponderada", "kpi2_pct_caminable", "kpi3_pct_puntual",
@@ -182,13 +153,11 @@ with t0:
             "rank_kpi1": "Lugar KPI 1", "rank_kpi2": "Lugar KPI 2", "rank_kpi3": "Lugar KPI 3",
             "rank_promedio": st.column_config.NumberColumn ("Lugar promedio", format="%.1f"),
         })
-    st.caption ("Lugar promedio = promedio de las posiciones en los 3 KPIs (1 = mejor). Ordena la tabla dando clic en una columna.")
+    st.caption ("Lugar promedio: 1 = mejor.")
 
 with t1:
-    st.header ("KPI 1 · Calificación ponderada por destino")
-    st.markdown ("Promedio de la **calificación bayesiana** de los lugares turísticos abiertos. "
-                 "Un lugar con pocas reseñas se acerca al promedio general; uno con muchas conserva su calificación. "
-                 "Le da al grupo un criterio objetivo para **votar el destino**.")
+    st.header ("KPI 1 · ¿A dónde ir?")
+    st.caption ("Estrellas ajustadas por número de reseñas.")
     a, b = st.columns ([1, 1.3])
     with a:
         st.plotly_chart (barras_ranking (resumen, "kpi1_calificacion_ponderada", "Calificación ponderada (★)", " ★", 2), width="stretch")
@@ -208,9 +177,8 @@ with t1:
                   column_order=["posicion", "nombre", "categoria_principal", "calificacion_ponderada", "num_resenas", "dist_centro_km"])
 
 with t2:
-    st.header ("KPI 2 · Índice de caminabilidad")
-    st.markdown ("De los lugares turísticos abiertos con **4★ o más**, qué porcentaje está a **2 km o menos del centro** (≈ 25 min a pie). "
-                 "Entre más alto, más del itinerario se recorre caminando o en transporte público → **menos CO₂ durante el viaje**.")
+    st.header ("KPI 2 · ¿Cómo moverse?")
+    st.caption ("% de lugares con 4★ o más a ≤ 2 km del centro.")
     a, b = st.columns ([1, 1.3])
     with a:
         st.plotly_chart (barras_ranking (resumen, "kpi2_pct_caminable", "% de lugares buenos a ≤ 2 km", " %"), width="stretch")
@@ -222,21 +190,14 @@ with t2:
         st.plotly_chart (estilo (fig, 320), width="stretch")
     with b:
         m = mapa[mapa["zona"] == ciudad].copy ()
-        m["ubicacion"] = m["dist_centro_km"].le (2).map ({True: "≤ 2 km del centro", False: "Más de 2 km"})
-        fig = px.scatter_map (m, lat="latitud", lon="longitud", color="ubicacion",
-                              color_discrete_map={"≤ 2 km del centro": AZUL, "Más de 2 km": "#9a9992"},
-                              hover_name="nombre", hover_data={"categoria_principal": True, "estrellas_yelp": True,
-                                                                "dist_centro_km": ":.1f", "latitud": False, "longitud": False, "ubicacion": False},
-                              zoom=9.5, map_style="carto-positron", opacity=0.75)
-        fig.update_traces (marker=dict (size=8))
-        fig.update_layout (title=f"Lugares con 4★ o más · {ciudad}", height=620, margin=dict (l=0, r=0, t=40, b=0),
-                           legend=dict (orientation="h", y=1.02, x=0, title=None), showlegend=True)
-        st.plotly_chart (fig, width="stretch")
+        st.markdown (f"**Lugares con 4★ o más · {ciudad}**")
+        m["color"] = m["dist_centro_km"].le (2).map ({True: "#2a78d6", False: "#b4b3ad"})
+        st.map (m, latitude="latitud", longitude="longitud", color="color", size=40, height=560)
+        st.caption ("🔵 a ≤ 2 km del centro · ⚪ más lejos")
 
 with t3:
-    st.header ("KPI 3 · Puntualidad de vuelos por destino y mes")
-    st.markdown ("% de vuelos que **llegaron a tiempo** (menos de 15 min de retraso, sin cancelarse ni desviarse) al aeropuerto de cada ciudad en 2025. "
-                 "Ayuda a **votar las fechas** con menos riesgo de retrasos, cancelaciones y gastos imprevistos.")
+    st.header ("KPI 3 · ¿Cuándo ir?")
+    st.caption ("% de vuelos que llegan a tiempo (< 15 min), por mes.")
     fig = go.Figure ()
     for z in ZONAS:
         d = mensual[mensual["zona"] == z].sort_values ("mes")
@@ -245,7 +206,7 @@ with t3:
                                    line=dict (color=AZUL if es else GRIS, width=3 if es else 1.5),
                                    marker=dict (size=8), hovertemplate=z + " · %{x}: %{y:.1f}%<extra></extra>"))
     fig.data = tuple (sorted (fig.data, key=lambda t: t.name == ciudad))
-    fig.update_layout (title=f"% de vuelos puntuales por mes · {ciudad} (azul) vs. otras ciudades (gris)")
+    fig.update_layout (title=f"% puntual por mes · {ciudad} vs. resto")
     fig.update_yaxes (ticksuffix=" %")
     st.plotly_chart (estilo (fig, 400), width="stretch")
 
@@ -269,11 +230,10 @@ with t3:
 
 with t4:
     st.header ("Impacto ambiental")
-    st.markdown ("TripSync puede recomendar destinos con **menos emisiones**: llegar con un vuelo más corto y moverse a pie en el destino. "
-                 "CO₂ estimado con factores del EPA por pasajero-milla según la distancia del vuelo (corto < 300 mi: 0.207 · medio: 0.130 · largo ≥ 2,300 mi: 0.162 kg).")
+    st.caption ("CO₂ por pasajero según la distancia del vuelo (factores EPA).")
     a, b = st.columns (2)
     with a:
-        st.plotly_chart (barras_ranking (resumen, "co2_prom_kg_pasajero", "CO₂ promedio por pasajero para llegar (kg) · menor es mejor", " kg", 0, ascendente=True), width="stretch")
+        st.plotly_chart (barras_ranking (resumen, "co2_prom_kg_pasajero", "CO₂ por pasajero (kg)", " kg", 0, ascendente=True), width="stretch")
     with b:
         fig = px.scatter (resumen, x="co2_prom_kg_pasajero", y="kpi2_pct_caminable", text="zona",
                           labels={"co2_prom_kg_pasajero": "CO₂ para llegar (kg por pasajero)", "kpi2_pct_caminable": "% caminable (KPI 2)"})
@@ -281,7 +241,7 @@ with t4:
                                         line=dict (color="white", width=2)),
                            textposition="top center", textfont=dict (color=TINTA, size=11),
                            hovertemplate="%{text}<br>CO₂: %{x:.0f} kg<br>Caminable: %{y:.1f}%<extra></extra>")
-        fig.update_layout (title="Destinos ideales: arriba a la izquierda (poco CO₂ y muy caminables)")
+        fig.update_layout (title="Ideal: arriba a la izquierda")
         st.plotly_chart (estilo (fig, 460), width="stretch")
 
     st.subheader (f"Rutas con más vuelos hacia {ciudad}")
@@ -307,8 +267,3 @@ with t5:
                              hovertemplate="%{x}: %{y:,} reseñas<extra></extra>"))
     fig.update_layout (title="Reseñas de Yelp por año (10 ciudades)", bargap=0.25)
     st.plotly_chart (estilo (fig, 320), width="stretch")
-    st.markdown (
-        "**Limitaciones**\n"
-        "- BTS solo incluye vuelos dentro de EE. UU.: el KPI 3 mide la confiabilidad del aeropuerto de destino, no de un vuelo desde México.\n"
-        "- La caminabilidad usa la distancia al centro; no considera banquetas ni rutas de transporte.\n"
-        "- Las reseñas de Yelp llegan a enero de 2022 y los vuelos son de 2025; no se cruzan por fecha, se unen por ciudad y aeropuerto.")
