@@ -307,12 +307,14 @@ with t4:
     with b:
         fig = px.scatter (resumen, x="co2_prom_kg_pasajero", y="kpi2_pct_caminable", text="zona",
                           labels={"co2_prom_kg_pasajero": "CO₂ para llegar (kg por pasajero) →", "kpi2_pct_caminable": "% caminable (KPI 2) →"})
-        fig.update_traces (marker=dict (size=12, color=[AZUL if z == ciudad else "#9a9992" for z in resumen["zona"]], line=dict (color="white", width=2)),
+        co2 = resumen["co2_prom_kg_pasajero"]
+        tam = 12 + (co2 - co2.min ()) / (co2.max () - co2.min ()) * 38
+        fig.update_traces (marker=dict (size=tam, color=[AZUL if z == ciudad else "#9a9992" for z in resumen["zona"]], opacity=0.85, line=dict (color="white", width=2)),
                            textposition="top center", textfont=dict (color=TINTA, size=11),
                            hovertemplate="%{text}<br>CO₂: %{x:.0f} kg<br>Caminable: %{y:.1f}%<extra></extra>")
         fig.update_layout (title="CO₂ al llegar vs. caminabilidad")
         st.plotly_chart (estilo (fig, 460), width="stretch")
-        st.caption ("Cada punto es una ciudad. **Arriba a la izquierda** = poco CO₂ para llegar y se recorre a pie (más sostenible).")
+        st.caption ("Cada punto es una ciudad; **más grande = más CO₂**. **Arriba a la izquierda** = poco CO₂ y se recorre a pie (más sostenible).")
 
     st.subheader (f"Rutas con más vuelos · {sel}")
     if ciudad is None:
