@@ -69,8 +69,85 @@ with st.sidebar:
 fila = resumen.set_index ("zona").loc[ciudad]
 n = len (resumen)
 
-t0, t1, t2, t3, t4, t5 = st.tabs (["Resumen", "KPI 1 · ¿A dónde?", "KPI 2 · ¿Cómo moverse?",
+tp, t0, t1, t2, t3, t4, t5 = st.tabs (["Presentación", "Resumen", "KPI 1 · ¿A dónde?", "KPI 2 · ¿Cómo moverse?",
                                     "KPI 3 · ¿Cuándo?", "Impacto ambiental", "Datos"])
+
+mes_global = mensual.groupby ("mes").apply (lambda d: (d["pct_puntual"] * d["vuelos"]).sum () / d["vuelos"].sum ())
+cat_prom = cat[cat["categoria_principal"] != "Sin categoría"].groupby ("categoria_principal")["calificacion_ponderada"].mean ().sort_values ()
+causas_op = (causas["pct_aerolinea"] + causas["pct_avion_tarde"]).mean ()
+clima = causas["pct_clima"].mean ()
+rk = resumen.assign (rank_prom=resumen[["rank_kpi1", "rank_kpi2", "rank_kpi3"]].mean (axis=1)).sort_values ("rank_prom")
+mejor = rk.iloc[0]
+peor_amb = resumen.sort_values ("co2_prom_kg_pasajero", ascending=False).iloc[:2]["zona"].tolist ()
+n_resenas = int (volumen.loc[volumen["tabla"].str.contains ("review"), "registros_que_usamos"].iloc[0])
+n_vuelos = int (volumen.loc[volumen["tabla"].str.contains ("BTS"), "registros_que_usamos"].iloc[0])
+n_vuelos_tot = int (volumen.loc[volumen["tabla"].str.contains ("BTS"), "registros_dataset_completo"].iloc[0])
+
+with tp:
+    st.header ("TripSync · Análisis Big Data para planear viajes en grupo")
+    st.markdown ("**Objetivo:** usar datos reales a gran escala para que un grupo de amigos decida **a dónde**, **cómo** y **cuándo** viajar, "
+                 "con menos discusiones y **menor huella de carbono**.")
+    a, b, c = st.columns (3)
+    a.metric ("Reseñas analizadas (Yelp)", f"{n_resenas:,}")
+    b.metric ("Vuelos analizados (BTS 2025)", f"{n_vuelos:,}", f"de {n_vuelos_tot:,} en EE. UU.", delta_color="off")
+    c.metric ("Ciudades comparadas", f"{n}")
+
+    st.subheader ("1 · Proceso")
+    pasos = [
+        ("① Selección", "Se evaluaron 5 datasets. Se eligieron **Yelp** (calidad de destinos) y **BTS** (vuelos) porque superan 200 mil registros y cubren las mismas 10 ciudades. OpenFlights se descartó (~82 mil registros)."),
+        ("② Descarga", "Google Colab + Kaggle API (Yelp, ~4 GB) y descarga directa desde BTS (12 meses de 2025). Se filtró a 10 ciudades por **distancia ≤ 40 km** del centro."),
+        ("③ Diagnóstico", "**DuckDB (SQL)** dentro de Python: faltantes, duplicados, atípicos (regla IQR) e inconsistencias. Evidencia guardada en CSV."),
+        ("④ Limpieza", "Imputación justificada, corrección de errores, banderas de atípicos sin borrar datos reales. **0 registros perdidos.** Bitácora de cada acción."),
+        ("⑤ KPIs y dashboard", "Cálculo de 3 KPIs + CO₂ en Colab; dashboard interactivo en **Streamlit + Plotly**, publicado en la web."),
+    ]
+    cols = st.columns (5)
+    for col, (titulo, texto) in zip (cols, pasos):
+        with col:
+            with st.container (border=True):
+                st.markdown (f"**{titulo}**")
+                st.caption (texto)
+
+    st.subheader ("2 · Limpieza de datos (resumen)")
+    st.markdown (
+        "| Tipo | Ejemplo | Tratamiento |\n|---|---|---|\n"
+        "| **Faltantes** | 92 negocios sin categoría · retrasos vacíos en vuelos cancelados | Imputar \"Sin categoría\" · **no** imputar (el vuelo no llegó) |\n"
+        "| **Imputados** | Votos = -1 · causas de retraso vacías en vuelos a tiempo | Imputar 0 |\n"
+        "| **Atípicos** | Negocios con miles de reseñas · retrasos de hasta 56 h | Conservar con bandera; promedio ponderado y versión recortada al p99 |\n"
+        "| **Inconsistencias** | 1,300+ formas de escribir las ciudades · rutas con 2 distancias | Ciudad por distancia · distancia más frecuente |")
+
+    st.subheader ("3 · ¿Por qué estos KPIs?")
+    st.markdown (
+        "| KPI | Decisión del grupo | Módulo de TripSync | Por qué este y no otro |\n|---|---|---|---|\n"
+        "| **1. Calificación ponderada** | ¿A dónde ir? | Votación de destino | El promedio simple engaña: un lugar con 3 reseñas pesaría igual que uno con 3,000. La fórmula bayesiana lo corrige |\n"
+        "| **2. Caminabilidad** | ¿Cómo moverse? | Itinerario colaborativo | Mide si los buenos lugares están cerca: menos taxis y autos = menos CO₂ y menos gasto |\n"
+        "| **3. Puntualidad por mes** | ¿Cuándo ir? | Votación de fechas y presupuesto | Retrasos y cancelaciones generan gastos y conflictos imprevistos |")
+
+    st.subheader ("4 · Valor para TripSync")
+    st.markdown (
+        "- **Decisiones con datos, no con opiniones:** el grupo vota con criterios objetivos y la votación se cierra más rápido.\n"
+        "- **Sugerencias confiables:** solo se recomiendan lugares abiertos y bien calificados.\n"
+        "- **Impacto ambiental:** TripSync puede priorizar destinos caminables y con vuelos más cortos, reduciendo la huella de carbono del viaje.\n"
+        "- **Escalable:** el mismo proceso funciona para cualquier ciudad con datos, gracias a herramientas de Big Data (DuckDB, Parquet).")
+
+    st.subheader ("5 · Conclusiones")
+    st.markdown (
+        f"- **{mejor['zona']}** es el mejor destino integral: lugar promedio {mejor['rank_prom']:.1f} en los 3 KPIs, "
+        f"{mejor['kpi2_pct_caminable']:.0f} % de sus lugares buenos a pie y {mejor['co2_prom_kg_pasajero']:.0f} kg de CO₂ por pasajero para llegar.\n"
+        f"- **Julio es el peor mes para volar** en las {n} ciudades ({mes_global.loc[7]:.1f} % de puntualidad); **septiembre el mejor** ({mes_global.loc[9]:.1f} %). "
+        "TripSync puede sugerir fechas fuera del verano.\n"
+        f"- Los retrasos son **operativos, no del clima**: aerolínea + avión que llega tarde explican ~{causas_op:.0f} % de los minutos de retraso; el clima solo ~{clima:.0f} %.\n"
+        f"- **{peor_amb[0]} y {peor_amb[1]}** combinan baja caminabilidad y más CO₂ para llegar: destinos menos sostenibles.\n"
+        f"- Las calificaciones entre ciudades son parecidas (3.7–3.9 ★), pero por categoría sí cambian: **{cat_prom.index[-1]}** es lo mejor calificado y "
+        f"**{cat_prom.index[0]}** lo peor ({cat_prom.iloc[0]:.2f} ★), así que conviene que el grupo revise bien el hospedaje.\n"
+        "- **Volumen:** sin herramientas de Big Data no sería posible procesar millones de reseñas y vuelos; Excel solo admite ~1 millón de filas.")
+
+    with st.expander ("Limitaciones"):
+        st.markdown (
+            "- BTS solo incluye vuelos dentro de EE. UU.: el KPI 3 mide la confiabilidad del aeropuerto de destino.\n"
+            "- La caminabilidad usa la distancia al centro; no considera banquetas ni transporte público.\n"
+            "- Reseñas de Yelp hasta enero 2022 y vuelos de 2025: se unen por ciudad, no por fecha.\n"
+            "- El CO₂ usa factores promedio del EPA por pasajero-milla.")
+    st.caption ("Herramientas: Python · Google Colab · DuckDB (SQL) · Parquet · Kaggle API · pandas · Plotly · Streamlit · GitHub")
 
 with t0:
     st.header (f"{ciudad}")
