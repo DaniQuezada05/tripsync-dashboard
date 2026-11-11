@@ -1,0 +1,11 @@
+zona,kpi1_calificacion_ponderada,lugares,resenas,kpi2_pct_caminable,lugares_buenos_a_2km,aeropuerto,kpi3_pct_puntual,mejor_mes,peor_mes,co2_prom_kg_pasajero,pct_negocios_abiertos,rank_kpi1,rank_kpi2,rank_kpi3
+Santa Barbara,3.89,1946,233782.0,50.3,668.0,SBA,79.7,4,7,80.9,78.1,1,1,2
+New Orleans,3.787,5213,591210.0,34.2,1009.0,MSY,75.6,9,7,102.8,77.4,2,2,7
+Boise,3.759,2063,112315.0,26.8,294.0,BOI,80.5,9,7,85.7,84.7,3,3,1
+Tampa,3.741,11331,783640.0,4.8,283.0,TPA,74.6,9,7,125.0,81.7,4,10,9
+Reno,3.733,2970,277547.0,24.3,386.0,RNO,78.5,9,7,79.1,81.4,5,4,5
+Indianapolis,3.73,5524,337541.0,14.7,412.0,IND,75.6,9,7,98.6,79.5,6,7,7
+Philadelphia,3.706,17422,1135393.0,17.3,1433.0,PHL,73.7,9,7,128.3,77.8,7,5,10
+Nashville,3.697,5822,443858.0,17.3,492.0,BNA,76.5,9,7,96.0,79.6,8,5,6
+Tucson,3.697,4103,281365.0,14.1,273.0,TUS,79.2,1,7,89.0,81.8,8,8,3
+St. Louis,3.695,6343,384136.0,6.3,188.0,STL,78.6,9,7,98.9,77.6,10,9,4

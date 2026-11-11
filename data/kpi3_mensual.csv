@@ -1,0 +1,121 @@
+zona,aeropuerto,mes,vuelos,pct_puntual,pct_cancelados,retraso_prom_si_se_retrasa_min
+Boise,BOI,1,1840,82.0,0.49,49.5
+Boise,BOI,2,1683,77.7,0.48,52.5
+Boise,BOI,3,1946,82.2,0.1,55.1
+Boise,BOI,4,1927,82.9,0.1,55.2
+Boise,BOI,5,1993,82.6,0.1,52.5
+Boise,BOI,6,2073,76.4,0.48,55.7
+Boise,BOI,7,2137,76.2,0.51,54.7
+Boise,BOI,8,2027,80.4,0.2,54.6
+Boise,BOI,9,1924,84.2,0.26,48.6
+Boise,BOI,10,2010,83.4,0.2,47.7
+Boise,BOI,11,1957,81.8,1.33,54.5
+Boise,BOI,12,2012,76.2,0.35,58.5
+Indianapolis,IND,1,3488,78.1,4.04,55.4
+Indianapolis,IND,2,3299,79.2,1.3,57.2
+Indianapolis,IND,3,4267,79.9,1.05,61.7
+Indianapolis,IND,4,3956,80.1,0.71,56.2
+Indianapolis,IND,5,4173,75.3,1.08,59.6
+Indianapolis,IND,6,4160,68.4,1.92,68.5
+Indianapolis,IND,7,4225,64.7,3.55,70.1
+Indianapolis,IND,8,3876,74.6,1.37,65.9
+Indianapolis,IND,9,3740,82.5,0.61,54.2
+Indianapolis,IND,10,4355,79.6,0.67,55.9
+Indianapolis,IND,11,3904,77.3,2.69,65.6
+Indianapolis,IND,12,3902,69.4,1.64,65.2
+Nashville,BNA,1,7397,79.3,4.26,58.4
+Nashville,BNA,2,6909,80.2,1.52,58.5
+Nashville,BNA,3,8655,79.6,0.91,62.5
+Nashville,BNA,4,8800,78.3,0.85,57.8
+Nashville,BNA,5,9455,75.2,1.06,60.6
+Nashville,BNA,6,9397,69.5,1.14,62.8
+Nashville,BNA,7,9458,68.4,1.96,67.1
+Nashville,BNA,8,9011,80.5,0.74,58.5
+Nashville,BNA,9,8687,85.1,0.23,53.4
+Nashville,BNA,10,9843,75.3,0.41,55.0
+Nashville,BNA,11,8846,76.7,1.31,61.7
+Nashville,BNA,12,8774,72.7,0.95,59.1
+New Orleans,MSY,1,4206,73.5,9.7,57.4
+New Orleans,MSY,2,4439,76.5,0.52,58.5
+New Orleans,MSY,3,4838,78.4,0.79,62.1
+New Orleans,MSY,4,4530,78.4,0.73,61.1
+New Orleans,MSY,5,4484,73.8,0.87,62.1
+New Orleans,MSY,6,4060,66.0,1.77,65.5
+New Orleans,MSY,7,4039,65.5,1.61,67.4
+New Orleans,MSY,8,3737,76.2,0.94,61.3
+New Orleans,MSY,9,3619,85.2,0.3,55.6
+New Orleans,MSY,10,4701,79.7,0.45,53.7
+New Orleans,MSY,11,4312,80.4,1.16,63.6
+New Orleans,MSY,12,4156,72.6,1.11,59.1
+Philadelphia,PHL,1,6688,78.0,2.68,66.6
+Philadelphia,PHL,2,6359,75.6,3.46,69.5
+Philadelphia,PHL,3,7681,77.3,1.46,67.1
+Philadelphia,PHL,4,8604,77.2,0.8,66.1
+Philadelphia,PHL,5,8864,69.7,2.0,65.5
+Philadelphia,PHL,6,8691,66.5,3.05,74.8
+Philadelphia,PHL,7,9014,61.7,5.27,82.4
+Philadelphia,PHL,8,9122,73.3,1.47,70.1
+Philadelphia,PHL,9,8217,81.3,0.49,61.8
+Philadelphia,PHL,10,9304,78.0,0.42,63.5
+Philadelphia,PHL,11,7489,78.2,2.0,72.7
+Philadelphia,PHL,12,7477,70.7,2.33,71.0
+Reno,RNO,1,1673,83.6,0.54,48.6
+Reno,RNO,2,1576,77.3,3.93,55.9
+Reno,RNO,3,1799,79.4,0.83,55.0
+Reno,RNO,4,1694,83.0,0.41,52.4
+Reno,RNO,5,1786,79.1,0.56,57.5
+Reno,RNO,6,1895,73.5,0.26,52.6
+Reno,RNO,7,1998,71.6,0.7,60.5
+Reno,RNO,8,1926,77.5,0.67,57.1
+Reno,RNO,9,1652,83.8,0.85,55.6
+Reno,RNO,10,1615,78.8,0.19,50.8
+Reno,RNO,11,1617,81.9,1.73,58.6
+Reno,RNO,12,1697,74.8,1.18,60.7
+Santa Barbara,SBA,1,560,83.2,0.89,51.6
+Santa Barbara,SBA,2,542,77.5,0.55,49.7
+Santa Barbara,SBA,3,652,80.4,0.15,57.3
+Santa Barbara,SBA,4,702,84.5,0.14,52.8
+Santa Barbara,SBA,5,749,80.2,0.27,51.7
+Santa Barbara,SBA,6,748,77.3,0.8,59.4
+Santa Barbara,SBA,7,762,73.5,3.41,63.7
+Santa Barbara,SBA,8,703,81.7,0.28,57.7
+Santa Barbara,SBA,9,671,80.0,0.6,53.8
+Santa Barbara,SBA,10,748,81.6,0.0,57.6
+Santa Barbara,SBA,11,717,79.9,2.65,59.0
+Santa Barbara,SBA,12,682,77.6,2.35,65.7
+St. Louis,STL,1,4716,77.4,6.7,56.2
+St. Louis,STL,2,4418,83.3,0.95,58.3
+St. Louis,STL,3,5376,81.9,0.97,60.3
+St. Louis,STL,4,5444,80.4,0.73,59.0
+St. Louis,STL,5,5634,77.9,1.19,57.2
+St. Louis,STL,6,5732,72.6,1.03,64.7
+St. Louis,STL,7,5856,72.0,1.42,67.7
+St. Louis,STL,8,5538,78.0,0.76,61.9
+St. Louis,STL,9,5322,85.3,0.41,52.0
+St. Louis,STL,10,5607,80.6,0.25,54.6
+St. Louis,STL,11,5203,80.4,1.35,60.5
+St. Louis,STL,12,5359,74.8,0.95,61.7
+Tampa,TPA,1,6456,76.4,1.98,55.9
+Tampa,TPA,2,6306,76.5,0.89,64.2
+Tampa,TPA,3,8056,77.0,1.78,68.3
+Tampa,TPA,4,7294,78.8,0.66,63.4
+Tampa,TPA,5,6968,74.1,0.59,61.4
+Tampa,TPA,6,6566,67.5,1.34,70.5
+Tampa,TPA,7,6772,64.2,1.83,70.7
+Tampa,TPA,8,6164,72.9,0.58,62.7
+Tampa,TPA,9,5501,84.9,0.25,57.7
+Tampa,TPA,10,6078,77.8,0.49,54.2
+Tampa,TPA,11,6424,76.4,2.18,63.2
+Tampa,TPA,12,6861,70.1,1.33,64.5
+Tucson,TUS,1,1867,82.0,1.5,54.3
+Tucson,TUS,2,1755,80.9,0.51,54.9
+Tucson,TUS,3,2051,79.5,0.49,61.7
+Tucson,TUS,4,1897,81.9,0.47,57.2
+Tucson,TUS,5,1750,81.1,0.69,56.3
+Tucson,TUS,6,1478,74.6,0.95,66.2
+Tucson,TUS,7,1441,72.9,1.11,62.4
+Tucson,TUS,8,1400,78.9,0.64,63.2
+Tucson,TUS,9,1373,80.0,1.09,58.9
+Tucson,TUS,10,1600,79.0,0.19,51.8
+Tucson,TUS,11,1756,80.6,2.33,56.9
+Tucson,TUS,12,1782,76.4,0.45,63.0

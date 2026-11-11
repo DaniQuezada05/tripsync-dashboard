@@ -1,0 +1,181 @@
+zona,anio,resenas,estrellas_prom
+Boise,2005,6,4.67
+Boise,2006,34,3.79
+Boise,2007,153,3.73
+Boise,2008,470,3.81
+Boise,2009,1074,3.63
+Boise,2010,1662,3.73
+Boise,2011,3053,3.72
+Boise,2012,3759,3.65
+Boise,2013,5491,3.68
+Boise,2014,9619,3.74
+Boise,2015,14329,3.72
+Boise,2016,16929,3.78
+Boise,2017,19293,3.8
+Boise,2018,22961,3.8
+Boise,2019,22412,3.79
+Boise,2020,17093,3.81
+Boise,2021,18357,3.67
+Boise,2022,908,3.66
+Indianapolis,2005,8,4.63
+Indianapolis,2006,182,4.28
+Indianapolis,2007,537,4.0
+Indianapolis,2008,2442,3.9
+Indianapolis,2009,2510,3.74
+Indianapolis,2010,6141,3.77
+Indianapolis,2011,12777,3.77
+Indianapolis,2012,15248,3.7
+Indianapolis,2013,23575,3.71
+Indianapolis,2014,31850,3.72
+Indianapolis,2015,45822,3.75
+Indianapolis,2016,52998,3.78
+Indianapolis,2017,59814,3.81
+Indianapolis,2018,68321,3.81
+Indianapolis,2019,69962,3.8
+Indianapolis,2020,45287,3.87
+Indianapolis,2021,49643,3.81
+Indianapolis,2022,2648,3.87
+Nashville,2005,18,4.06
+Nashville,2006,177,3.91
+Nashville,2007,891,3.84
+Nashville,2008,4789,3.89
+Nashville,2009,4103,3.84
+Nashville,2010,8130,3.75
+Nashville,2011,16772,3.75
+Nashville,2012,22123,3.7
+Nashville,2013,28994,3.69
+Nashville,2014,41844,3.74
+Nashville,2015,56596,3.76
+Nashville,2016,65584,3.76
+Nashville,2017,72281,3.75
+Nashville,2018,85237,3.79
+Nashville,2019,89773,3.77
+Nashville,2020,51049,3.82
+Nashville,2021,63206,3.73
+Nashville,2022,2849,3.67
+New Orleans,2005,312,3.76
+New Orleans,2006,316,4.2
+New Orleans,2007,1350,4.05
+New Orleans,2008,3451,3.94
+New Orleans,2009,7204,3.85
+New Orleans,2010,15668,3.8
+New Orleans,2011,30464,3.76
+New Orleans,2012,33266,3.75
+New Orleans,2013,44374,3.77
+New Orleans,2014,60035,3.82
+New Orleans,2015,78925,3.86
+New Orleans,2016,85021,3.89
+New Orleans,2017,89460,3.92
+New Orleans,2018,106547,3.95
+New Orleans,2019,103128,3.94
+New Orleans,2020,46210,3.93
+New Orleans,2021,53147,3.89
+New Orleans,2022,2830,3.88
+Philadelphia,2005,140,3.92
+Philadelphia,2006,1210,3.98
+Philadelphia,2007,7317,3.81
+Philadelphia,2008,20055,3.72
+Philadelphia,2009,33393,3.69
+Philadelphia,2010,53513,3.7
+Philadelphia,2011,77211,3.66
+Philadelphia,2012,94206,3.64
+Philadelphia,2013,119385,3.65
+Philadelphia,2014,146299,3.68
+Philadelphia,2015,176587,3.68
+Philadelphia,2016,185603,3.7
+Philadelphia,2017,197965,3.71
+Philadelphia,2018,202916,3.69
+Philadelphia,2019,200352,3.68
+Philadelphia,2020,112129,3.69
+Philadelphia,2021,116765,3.62
+Philadelphia,2022,5899,3.64
+Reno,2005,47,3.94
+Reno,2006,205,3.73
+Reno,2007,608,3.83
+Reno,2008,2231,3.72
+Reno,2009,4393,3.6
+Reno,2010,7341,3.62
+Reno,2011,12147,3.64
+Reno,2012,13901,3.61
+Reno,2013,18088,3.62
+Reno,2014,29355,3.7
+Reno,2015,38833,3.74
+Reno,2016,44489,3.77
+Reno,2017,52212,3.77
+Reno,2018,57771,3.75
+Reno,2019,58044,3.75
+Reno,2020,42604,3.77
+Reno,2021,46451,3.67
+Reno,2022,2282,3.58
+Santa Barbara,2005,71,4.01
+Santa Barbara,2006,427,4.08
+Santa Barbara,2007,1691,3.89
+Santa Barbara,2008,3250,3.81
+Santa Barbara,2009,5252,3.78
+Santa Barbara,2010,8502,3.82
+Santa Barbara,2011,13746,3.78
+Santa Barbara,2012,16508,3.79
+Santa Barbara,2013,21213,3.85
+Santa Barbara,2014,28745,3.9
+Santa Barbara,2015,34751,3.94
+Santa Barbara,2016,37476,4.01
+Santa Barbara,2017,38960,4.02
+Santa Barbara,2018,38997,4.04
+Santa Barbara,2019,37961,4.0
+Santa Barbara,2020,28000,4.06
+Santa Barbara,2021,31342,3.98
+Santa Barbara,2022,1502,4.05
+St. Louis,2005,99,3.97
+St. Louis,2006,545,4.02
+St. Louis,2007,1249,3.92
+St. Louis,2008,5585,3.97
+St. Louis,2009,5646,3.76
+St. Louis,2010,17169,3.74
+St. Louis,2011,22909,3.72
+St. Louis,2012,27043,3.7
+St. Louis,2013,33923,3.72
+St. Louis,2014,42312,3.71
+St. Louis,2015,54830,3.71
+St. Louis,2016,59228,3.71
+St. Louis,2017,62714,3.73
+St. Louis,2018,66556,3.7
+St. Louis,2019,68350,3.71
+St. Louis,2020,38736,3.73
+St. Louis,2021,45155,3.67
+St. Louis,2022,2211,3.73
+Tampa,2005,15,4.0
+Tampa,2006,469,3.85
+Tampa,2007,580,3.86
+Tampa,2008,1567,3.77
+Tampa,2009,3959,3.73
+Tampa,2010,7540,3.72
+Tampa,2011,15704,3.71
+Tampa,2012,27138,3.69
+Tampa,2013,46428,3.69
+Tampa,2014,73312,3.73
+Tampa,2015,112928,3.76
+Tampa,2016,130438,3.79
+Tampa,2017,138495,3.8
+Tampa,2018,158763,3.8
+Tampa,2019,161391,3.79
+Tampa,2020,110207,3.8
+Tampa,2021,127319,3.69
+Tampa,2022,6943,3.69
+Tucson,2005,127,3.94
+Tucson,2006,239,3.97
+Tucson,2007,775,3.86
+Tucson,2008,2031,3.72
+Tucson,2009,3602,3.63
+Tucson,2010,6930,3.69
+Tucson,2011,15487,3.74
+Tucson,2012,18836,3.7
+Tucson,2013,23580,3.66
+Tucson,2014,32574,3.7
+Tucson,2015,39261,3.7
+Tucson,2016,43500,3.72
+Tucson,2017,48821,3.73
+Tucson,2018,56339,3.74
+Tucson,2019,56277,3.69
+Tucson,2020,38681,3.67
+Tucson,2021,42451,3.58
+Tucson,2022,2256,3.52

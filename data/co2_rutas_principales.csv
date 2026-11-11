@@ -1,0 +1,148 @@
+zona,origen,ciudad_origen,distancia_km,co2_kg_pasajero,vuelos
+Boise,SEA,"Seattle, WA",642.1,51.9,3945
+Boise,DEN,"Denver, CO",1044.5,84.4,2990
+Boise,PHX,"Phoenix, AZ",1182.9,95.6,2083
+Boise,SLC,"Salt Lake City, UT",466.7,60.0,1703
+Boise,SFO,"San Francisco, CA",840.1,67.9,1529
+Boise,LAX,"Los Angeles, CA",1084.7,87.6,1444
+Boise,LAS,"Las Vegas, NV",835.2,67.5,1440
+Boise,PDX,"Portland, OR",553.6,44.7,982
+Boise,SAN,"San Diego, CA",1205.4,97.4,934
+Boise,ORD,"Chicago, IL",2312.6,186.8,931
+Boise,SMF,"Sacramento, CA",703.3,56.8,913
+Boise,MSP,"Minneapolis, MN",1837.9,148.5,777
+Boise,DFW,"Dallas/Fort Worth, TX",2047.1,165.4,770
+Boise,SJC,"San Jose, CA",841.7,68.0,702
+Boise,OAK,"Oakland, CA",824.0,66.6,662
+Indianapolis,ORD,"Chicago, IL",284.9,36.6,4695
+Indianapolis,ATL,"Atlanta, GA",695.2,56.2,3294
+Indianapolis,DEN,"Denver, CO",1570.7,126.9,2556
+Indianapolis,LGA,"New York, NY",1062.2,85.8,2363
+Indianapolis,MCO,"Orlando, FL",1334.1,107.8,2358
+Indianapolis,DFW,"Dallas/Fort Worth, TX",1224.7,98.9,2038
+Indianapolis,EWR,"Newark, NJ",1038.0,83.9,2002
+Indianapolis,DCA,"Washington, DC",804.7,65.0,1961
+Indianapolis,BOS,"Boston, MA",1316.4,106.3,1960
+Indianapolis,CLT,"Charlotte, NC",687.2,55.5,1906
+Indianapolis,PHX,"Phoenix, AZ",2394.7,193.4,1505
+Indianapolis,PHL,"Philadelphia, PA",946.3,76.4,1469
+Indianapolis,LAS,"Las Vegas, NV",2558.9,206.7,1416
+Indianapolis,BWI,"Baltimore, MD",830.4,67.1,1202
+Indianapolis,TPA,"Tampa, FL",1347.0,108.8,1159
+Nashville,ORD,"Chicago, IL",658.2,53.2,4848
+Nashville,DCA,"Washington, DC",904.4,73.1,4115
+Nashville,ATL,"Atlanta, GA",344.4,44.3,4052
+Nashville,LGA,"New York, NY",1229.5,99.3,3785
+Nashville,DEN,"Denver, CO",1630.3,131.7,3734
+Nashville,CLT,"Charlotte, NC",527.9,42.6,3708
+Nashville,DFW,"Dallas/Fort Worth, TX",1015.5,82.0,3381
+Nashville,MCO,"Orlando, FL",991.4,80.1,3275
+Nashville,AUS,"Austin, TX",1216.7,98.3,2991
+Nashville,BOS,"Boston, MA",1516.0,122.5,2882
+Nashville,PHL,"Philadelphia, PA",1086.3,87.8,2640
+Nashville,DTW,"Detroit, MI",733.9,59.3,2465
+Nashville,TPA,"Tampa, FL",984.9,79.6,2423
+Nashville,DAL,"Dallas, TX",1002.6,81.0,2420
+Nashville,PHX,"Phoenix, AZ",2331.9,188.4,2386
+New Orleans,ATL,"Atlanta, GA",684.0,55.3,4271
+New Orleans,IAH,"Houston, TX",490.8,39.7,3030
+New Orleans,DFW,"Dallas/Fort Worth, TX",719.4,58.1,2801
+New Orleans,MCO,"Orlando, FL",886.7,71.6,2289
+New Orleans,DAL,"Dallas, TX",701.7,56.7,2268
+New Orleans,DEN,"Denver, CO",1709.1,138.1,2265
+New Orleans,HOU,"Houston, TX",486.0,39.3,2258
+New Orleans,ORD,"Chicago, IL",1347.0,108.8,2077
+New Orleans,AUS,"Austin, TX",716.2,57.9,2041
+New Orleans,CLT,"Charlotte, NC",1047.7,84.6,1949
+New Orleans,DCA,"Washington, DC",1559.5,126.0,1863
+New Orleans,LAX,"Los Angeles, CA",2687.6,217.1,1781
+New Orleans,MIA,"Miami, FL",1086.3,87.8,1677
+New Orleans,BNA,"Nashville, TN",758.0,61.2,1566
+New Orleans,LGA,"New York, NY",1903.8,153.8,1444
+Philadelphia,ATL,"Atlanta, GA",1071.8,86.6,5511
+Philadelphia,MCO,"Orlando, FL",1385.6,111.9,5355
+Philadelphia,BOS,"Boston, MA",450.6,58.0,4915
+Philadelphia,ORD,"Chicago, IL",1091.1,88.1,4467
+Philadelphia,CLT,"Charlotte, NC",722.6,58.4,3575
+Philadelphia,DFW,"Dallas/Fort Worth, TX",2097.0,169.4,3211
+Philadelphia,MIA,"Miami, FL",1630.3,131.7,3089
+Philadelphia,DEN,"Denver, CO",2507.4,202.5,3004
+Philadelphia,DTW,"Detroit, MI",729.0,58.9,2836
+Philadelphia,FLL,"Fort Lauderdale, FL",1598.1,129.1,2795
+Philadelphia,BNA,"Nashville, TN",1086.3,87.8,2646
+Philadelphia,TPA,"Tampa, FL",1480.6,119.6,2560
+Philadelphia,LAX,"Los Angeles, CA",3865.6,389.1,2491
+Philadelphia,RDU,"Raleigh/Durham, NC",542.3,43.8,2397
+Philadelphia,PHX,"Phoenix, AZ",3339.4,269.8,2268
+Reno,LAS,"Las Vegas, NV",555.2,44.9,3813
+Reno,DEN,"Denver, CO",1293.9,104.5,2681
+Reno,LAX,"Los Angeles, CA",629.3,50.8,2607
+Reno,PHX,"Phoenix, AZ",967.2,78.1,2421
+Reno,SFO,"San Francisco, CA",309.0,39.7,1774
+Reno,DFW,"Dallas/Fort Worth, TX",2164.6,174.9,1214
+Reno,SLC,"Salt Lake City, UT",679.1,54.9,1172
+Reno,SAN,"San Diego, CA",785.4,63.4,1130
+Reno,SEA,"Seattle, WA",907.7,73.3,808
+Reno,LGB,"Long Beach, CA",647.0,52.3,735
+Reno,BUR,"Burbank, CA",601.9,48.6,431
+Reno,ORD,"Chicago, IL",2689.2,217.2,361
+Reno,ATL,"Atlanta, GA",3207.4,259.1,308
+Reno,SJC,"San Jose, CA",302.6,38.9,251
+Reno,OAK,"Oakland, CA",291.3,37.5,224
+Santa Barbara,SFO,"San Francisco, CA",421.6,54.2,1460
+Santa Barbara,PHX,"Phoenix, AZ",732.2,59.2,1371
+Santa Barbara,DEN,"Denver, CO",1474.2,119.1,1036
+Santa Barbara,SLC,"Salt Lake City, UT",989.7,80.0,916
+Santa Barbara,LAS,"Las Vegas, NV",465.1,59.8,853
+Santa Barbara,LAX,"Los Angeles, CA",143.2,18.4,665
+Santa Barbara,SEA,"Seattle, WA",1461.3,118.0,444
+Santa Barbara,SMF,"Sacramento, CA",498.9,40.3,358
+Santa Barbara,ATL,"Atlanta, GA",3254.1,262.9,357
+Santa Barbara,DFW,"Dallas/Fort Worth, TX",2117.9,171.1,341
+Santa Barbara,OAK,"Oakland, CA",423.3,54.4,323
+Santa Barbara,PDX,"Portland, OR",1261.7,101.9,27
+St. Louis,DEN,"Denver, CO",1239.2,100.1,3649
+St. Louis,ATL,"Atlanta, GA",778.9,62.9,3571
+St. Louis,ORD,"Chicago, IL",415.2,53.4,2868
+St. Louis,LGA,"New York, NY",1429.1,115.4,2513
+St. Louis,MCO,"Orlando, FL",1419.4,114.7,2372
+St. Louis,DFW,"Dallas/Fort Worth, TX",885.1,71.5,2305
+St. Louis,DCA,"Washington, DC",1157.1,93.5,2281
+St. Louis,PHX,"Phoenix, AZ",2031.0,164.1,2223
+St. Louis,LAS,"Las Vegas, NV",2206.4,178.2,2009
+St. Louis,CLT,"Charlotte, NC",925.4,74.8,1984
+St. Louis,DAL,"Dallas, TX",878.7,71.0,1947
+St. Louis,DTW,"Detroit, MI",708.1,57.2,1803
+St. Louis,MSP,"Minneapolis, MN",721.0,58.2,1776
+St. Louis,MDW,"Chicago, IL",403.9,52.0,1710
+St. Louis,BOS,"Boston, MA",1685.0,136.1,1591
+Tampa,ATL,"Atlanta, GA",653.4,52.8,6010
+Tampa,CLT,"Charlotte, NC",815.9,65.9,3572
+Tampa,ORD,"Chicago, IL",1628.7,131.6,3168
+Tampa,DEN,"Denver, CO",2423.7,195.8,3127
+Tampa,MIA,"Miami, FL",328.3,42.2,3064
+Tampa,BOS,"Boston, MA",1907.1,154.1,2942
+Tampa,DFW,"Dallas/Fort Worth, TX",1495.1,120.8,2787
+Tampa,BWI,"Baltimore, MD",1355.1,109.5,2763
+Tampa,EWR,"Newark, NJ",1604.5,129.6,2711
+Tampa,LGA,"New York, NY",1625.4,131.3,2708
+Tampa,PHL,"Philadelphia, PA",1480.6,119.6,2561
+Tampa,JFK,"New York, NY",1617.4,130.7,2483
+Tampa,BNA,"Nashville, TN",984.9,79.6,2410
+Tampa,DTW,"Detroit, MI",1582.0,127.8,2354
+Tampa,DCA,"Washington, DC",1310.0,105.8,2125
+Tucson,PHX,"Phoenix, AZ",177.0,22.8,3238
+Tucson,DEN,"Denver, CO",1028.4,83.1,2838
+Tucson,LAX,"Los Angeles, CA",725.8,58.6,2636
+Tucson,DFW,"Dallas/Fort Worth, TX",1308.4,105.7,2197
+Tucson,LAS,"Las Vegas, NV",585.8,47.3,1329
+Tucson,ORD,"Chicago, IL",2312.6,186.8,1096
+Tucson,SLC,"Salt Lake City, UT",965.6,78.0,1085
+Tucson,SEA,"Seattle, WA",1957.0,158.1,1064
+Tucson,SFO,"San Francisco, CA",1208.6,97.6,1033
+Tucson,ATL,"Atlanta, GA",2480.0,200.3,791
+Tucson,SAN,"San Diego, CA",590.6,47.7,621
+Tucson,MDW,"Chicago, IL",2317.4,187.2,351
+Tucson,PDX,"Portland, OR",1800.9,145.5,341
+Tucson,HOU,"Houston, TX",1520.8,122.9,336
+Tucson,IAH,"Houston, TX",1506.3,121.7,298

@@ -1,0 +1,50 @@
+zona,rango_distancia,lugares_buenos,calificacion_ponderada
+Boise,0-2 km,294,4.087
+Boise,10-20 km,334,4.048
+Boise,2-5 km,204,4.081
+Boise,5-10 km,264,4.036
+Indianapolis,0-2 km,412,4.133
+Indianapolis,10-20 km,1130,4.05
+Indianapolis,2-5 km,222,4.169
+Indianapolis,20-40 km,657,4.07
+Indianapolis,5-10 km,389,4.094
+Nashville,0-2 km,492,4.107
+Nashville,10-20 km,535,4.063
+Nashville,2-5 km,514,4.111
+Nashville,20-40 km,765,4.041
+Nashville,5-10 km,541,4.085
+New Orleans,0-2 km,1009,4.108
+New Orleans,10-20 km,493,4.024
+New Orleans,2-5 km,835,4.125
+New Orleans,20-40 km,17,4.035
+New Orleans,5-10 km,599,4.06
+Philadelphia,0-2 km,1433,4.104
+Philadelphia,10-20 km,2016,4.034
+Philadelphia,2-5 km,1056,4.103
+Philadelphia,20-40 km,3129,4.027
+Philadelphia,5-10 km,673,4.046
+Reno,0-2 km,386,4.15
+Reno,10-20 km,182,4.1
+Reno,2-5 km,441,4.109
+Reno,20-40 km,41,4.13
+Reno,5-10 km,540,4.082
+Santa Barbara,0-2 km,668,4.175
+Santa Barbara,10-20 km,329,4.105
+Santa Barbara,2-5 km,203,4.104
+Santa Barbara,20-40 km,8,4.005
+Santa Barbara,5-10 km,119,4.069
+St. Louis,0-2 km,188,4.108
+St. Louis,10-20 km,936,4.037
+St. Louis,2-5 km,289,4.129
+St. Louis,20-40 km,1072,4.038
+St. Louis,5-10 km,496,4.112
+Tampa,0-2 km,283,4.113
+Tampa,10-20 km,1048,4.053
+Tampa,2-5 km,408,4.093
+Tampa,20-40 km,3506,4.076
+Tampa,5-10 km,668,4.062
+Tucson,0-2 km,273,4.13
+Tucson,10-20 km,643,4.043
+Tucson,2-5 km,275,4.087
+Tucson,20-40 km,163,4.039
+Tucson,5-10 km,582,4.058

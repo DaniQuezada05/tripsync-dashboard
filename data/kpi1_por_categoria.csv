@@ -1,0 +1,61 @@
+zona,categoria_principal,calificacion_ponderada,lugares,resenas
+Boise,Aire libre,3.982,35,596.0
+Boise,Atracciones y cultura,3.974,133,5431.0
+Boise,Vida nocturna,3.8,232,25492.0
+Boise,Compras,3.788,578,8976.0
+Boise,Restaurantes,3.714,1014,68299.0
+Boise,Hospedaje,3.516,71,3521.0
+Indianapolis,Aire libre,3.991,111,1898.0
+Indianapolis,Atracciones y cultura,3.962,404,21840.0
+Indianapolis,Vida nocturna,3.81,573,87847.0
+Indianapolis,Compras,3.761,1218,22321.0
+Indianapolis,Restaurantes,3.685,2979,195258.0
+Indianapolis,Hospedaje,3.417,239,8377.0
+Nashville,Aire libre,3.931,82,1698.0
+Nashville,Atracciones y cultura,3.919,472,44980.0
+Nashville,Vida nocturna,3.787,628,121430.0
+Nashville,Compras,3.738,1242,23930.0
+Nashville,Restaurantes,3.649,3051,232961.0
+Nashville,Hospedaje,3.454,347,18859.0
+New Orleans,Atracciones y cultura,4.009,699,57529.0
+New Orleans,Aire libre,3.954,59,1836.0
+New Orleans,Vida nocturna,3.822,665,131085.0
+New Orleans,Compras,3.797,974,19480.0
+New Orleans,Restaurantes,3.731,2457,348178.0
+New Orleans,Hospedaje,3.621,359,33102.0
+Philadelphia,Aire libre,3.922,177,7753.0
+Philadelphia,Atracciones y cultura,3.84,1013,60762.0
+Philadelphia,Compras,3.725,3914,77895.0
+Philadelphia,Restaurantes,3.701,10227,710941.0
+Philadelphia,Vida nocturna,3.667,1684,254523.0
+Philadelphia,Hospedaje,3.36,407,23519.0
+Reno,Aire libre,3.979,64,1438.0
+Reno,Atracciones y cultura,3.915,286,13693.0
+Reno,Vida nocturna,3.863,301,51099.0
+Reno,Compras,3.781,969,31209.0
+Reno,Restaurantes,3.644,1246,158990.0
+Reno,Hospedaje,3.318,104,21118.0
+Santa Barbara,Atracciones y cultura,4.125,271,19720.0
+Santa Barbara,Vida nocturna,4.034,159,52913.0
+Santa Barbara,Aire libre,4.03,79,2608.0
+Santa Barbara,Compras,3.905,569,15957.0
+Santa Barbara,Restaurantes,3.801,756,125363.0
+Santa Barbara,Hospedaje,3.551,112,17221.0
+St. Louis,Aire libre,3.967,73,1627.0
+St. Louis,Atracciones y cultura,3.889,418,26927.0
+St. Louis,Vida nocturna,3.755,774,95869.0
+St. Louis,Compras,3.737,1368,23272.0
+St. Louis,Restaurantes,3.651,3472,225197.0
+St. Louis,Hospedaje,3.472,238,11244.0
+Tampa,Aire libre,3.955,322,9870.0
+Tampa,Atracciones y cultura,3.913,748,45347.0
+Tampa,Vida nocturna,3.788,1239,191153.0
+Tampa,Compras,3.742,2635,46371.0
+Tampa,Restaurantes,3.718,5873,464887.0
+Tampa,Hospedaje,3.498,514,26012.0
+Tucson,Aire libre,3.974,73,1483.0
+Tucson,Atracciones y cultura,3.922,264,11576.0
+Tucson,Compras,3.752,1236,26867.0
+Tucson,Vida nocturna,3.732,341,63102.0
+Tucson,Restaurantes,3.639,2019,167638.0
+Tucson,Hospedaje,3.446,170,10699.0

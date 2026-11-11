@@ -1,0 +1,201 @@
+zona,categoria_principal,nombre,calificacion_ponderada,num_resenas,dist_centro_km,posicion
+Nashville,Atracciones y cultura,The Escape Game Nashville,4.83,232,5.4,1
+Nashville,Restaurantes,Yats,4.81,637,24.0,2
+Nashville,Compras,Walls Jewelry Repairing,4.8,114,0.0,3
+Nashville,Atracciones y cultura,Nelson's Green Brier Distillery,4.77,551,1.5,4
+Nashville,Restaurantes,Big Al's Deli,4.75,393,2.8,5
+Nashville,Restaurantes,The Horn,4.73,130,4.5,6
+Nashville,Restaurantes,Edessa Restaurant Kurdish Turkish Cuisine,4.73,202,9.5,7
+Nashville,Restaurantes,Semper Sliders,4.72,153,9.9,8
+Nashville,Compras,Spa Haus Nashville,4.7,168,5.5,9
+Nashville,Restaurantes,The Poki,4.69,195,14.1,10
+Nashville,Compras,Walden Floral LA & Nashville,4.69,64,1.1,11
+Nashville,Restaurantes,Tasty And Delicious,4.68,264,12.2,12
+Nashville,Atracciones y cultura,Walk Eat Nashville,4.68,68,5.3,13
+Nashville,Restaurantes,D'Andrews Bakery & Cafe,4.68,213,0.1,14
+Nashville,Restaurantes,The Café at Thistle Farms,4.67,192,6.2,15
+Nashville,Restaurantes,Campione's Taste of Chicago,4.67,216,37.9,16
+Nashville,Atracciones y cultura,Pivotal Touch Healing,4.67,58,21.5,17
+Nashville,Atracciones y cultura,Nashville Pedal Tavern,4.66,334,1.2,18
+Nashville,Atracciones y cultura,Lotz Civil War House Museum,4.66,122,28.4,19
+Nashville,Restaurantes,Ice Point Cafe,4.65,94,27.6,20
+Reno,Restaurantes,Pangolin Café,4.81,139,1.6,1
+Reno,Restaurantes,Smiling With Hope Pizza,4.8,549,6.4,2
+Reno,Vida nocturna,Carlillos Cocina,4.78,830,4.0,3
+Reno,Restaurantes,Kaffe Crepe,4.78,474,3.9,4
+Reno,Atracciones y cultura,Keystone Escape Games,4.77,99,1.8,5
+Reno,Atracciones y cultura,Break Through Reno,4.76,342,3.1,6
+Reno,Restaurantes,Delicious Designs,4.74,101,7.0,7
+Reno,Compras,Hair Cut & Color Design by Carleen Sanchez,4.74,100,2.7,8
+Reno,Compras,Alpine Lock and Key,4.72,245,1.2,9
+Reno,Vida nocturna,Arario Midtown,4.72,615,1.4,10
+Reno,Restaurantes,The Spice & Tea Shoppe,4.72,136,6.1,11
+Reno,Compras,BVW Jewelers,4.72,195,10.6,12
+Reno,Restaurantes,Paleteria Del Angel,4.71,87,8.5,13
+Reno,Restaurantes,Aladdin's Market & Kitchen,4.69,108,1.8,14
+Reno,Restaurantes,Sabrina's West Street Kitchen,4.69,579,0.4,15
+Reno,Compras,Swoon Bridal,4.68,117,2.7,16
+Reno,Restaurantes,House of Mexica,4.67,387,4.4,17
+Reno,Restaurantes,Perenn - Midtown,4.66,233,1.3,18
+Reno,Restaurantes,Pola Poke Bowls,4.65,232,5.0,19
+Reno,Restaurantes,Kwok's Bistro,4.65,600,0.3,20
+Tampa,Restaurantes,Yolk White & Associates,4.83,230,0.6,1
+Tampa,Restaurantes,The Mediterranean Chickpea,4.82,192,5.2,2
+Tampa,Restaurantes,Ice Dreammm Shop,4.82,315,26.3,3
+Tampa,Atracciones y cultura,Stigma Ink,4.76,114,4.6,4
+Tampa,Restaurantes,Barracuda Deli Cafe St. Pete Beach,4.75,535,37.2,5
+Tampa,Restaurantes,German Knodle,4.75,195,27.4,6
+Tampa,Restaurantes,Chicago Paulies,4.75,191,2.6,7
+Tampa,Restaurantes,South Pacific Grill,4.75,194,15.3,8
+Tampa,Vida nocturna,Mio’s Grill & Cafe,4.75,115,26.4,9
+Tampa,Restaurantes,Pure Kitchen Organic Vegan,4.74,133,3.9,10
+Tampa,Compras,3D Carpet Cleaning and Restoration,4.74,210,13.7,11
+Tampa,Restaurantes,Cafe Soleil,4.73,475,37.5,12
+Tampa,Restaurantes,German Bistro 2,4.73,316,31.3,13
+Tampa,Restaurantes,Healthy N Fresh Cafe,4.72,240,4.8,14
+Tampa,Restaurantes,Sulphur Springs  Sandwiches Shop,4.72,351,9.0,15
+Tampa,Restaurantes,Kpicu,4.71,209,28.3,16
+Tampa,Restaurantes,Vegan International Co. Kitchen & Market,4.7,280,13.5,17
+Tampa,Restaurantes,Savanh of Laos,4.7,169,35.3,18
+Tampa,Restaurantes,Pacific Counter,4.7,421,27.1,19
+Tampa,Restaurantes,Plant Love Ice Cream,4.7,139,27.4,20
+Indianapolis,Restaurantes,TeeJay's Sweet Tooth,4.77,222,16.9,1
+Indianapolis,Restaurantes,Subito,4.75,206,0.3,2
+Indianapolis,Restaurantes,3 in 1 Restaurant,4.72,195,16.0,3
+Indianapolis,Restaurantes,Nicey Treat,4.71,209,11.5,4
+Indianapolis,Vida nocturna,St Yared Ethiopian Restaurant,4.71,259,25.6,5
+Indianapolis,Restaurantes,Ali'i Poke Indy,4.7,228,2.0,6
+Indianapolis,Restaurantes,Tlaolli,4.69,212,3.6,7
+Indianapolis,Restaurantes,Coat Check Coffee,4.69,464,0.9,8
+Indianapolis,Restaurantes,Ali'i Poke Fishers,4.69,124,24.4,9
+Indianapolis,Restaurantes,Vida,4.68,372,1.0,10
+Indianapolis,Restaurantes,Sundae's Ice Cream & Coffee,4.68,231,20.3,11
+Indianapolis,Restaurantes,Fitzgerald's Lunch House,4.67,174,16.2,12
+Indianapolis,Restaurantes,Amelia’s,4.67,220,1.6,13
+Indianapolis,Atracciones y cultura,The Escape Room Fishers,4.67,122,24.4,14
+Indianapolis,Restaurantes,Bugambilias Mexican Cuisine,4.67,154,17.7,15
+Indianapolis,Restaurantes,Yannis Golden Gyros,4.66,102,10.4,16
+Indianapolis,Restaurantes,Georgia Street Grind,4.66,94,0.5,17
+Indianapolis,Restaurantes,MOTW Coffee & Pastries,4.65,74,9.4,18
+Indianapolis,Restaurantes,Don Juan V's Sandwiches,4.64,153,5.8,19
+Indianapolis,Restaurantes,Yaso Jamaican Grill,4.64,94,2.8,20
+New Orleans,Atracciones y cultura,New Orleans Airboat Tours,4.88,286,19.9,1
+New Orleans,Atracciones y cultura,Escape My Room,4.87,284,0.5,2
+New Orleans,Atracciones y cultura,New Orleans Secrets Tours,4.86,216,1.0,3
+New Orleans,Atracciones y cultura,Two Chicks Walking Tours,4.83,344,2.3,4
+New Orleans,Atracciones y cultura,Free Tours By Foot,4.83,780,3.0,5
+New Orleans,Atracciones y cultura,Flambeaux Bicycle Tours,4.83,168,1.0,6
+New Orleans,Atracciones y cultura,Buzz Nola Bike Tours & Rentals,4.82,223,0.4,7
+New Orleans,Atracciones y cultura,Confederacy of Cruisers Bike Tours,4.82,319,2.0,8
+New Orleans,Atracciones y cultura,Eric 'Big E' Airport Transportation Service,4.81,198,1.8,9
+New Orleans,Atracciones y cultura,FreeWheelin' Bike Tours & Rentals,4.79,243,0.7,10
+New Orleans,Restaurantes,Rollin Fatties,4.76,176,0.7,11
+New Orleans,Atracciones y cultura,Drink & Learn,4.76,90,1.7,12
+New Orleans,Atracciones y cultura,New Orleans Kayak Swamp Tours,4.74,223,3.7,13
+New Orleans,Atracciones y cultura,Wild Louisiana Tours,4.73,105,3.5,14
+New Orleans,Atracciones y cultura,Doctor Gumbo Tours,4.72,116,1.2,15
+New Orleans,Restaurantes,Cafe Porche and snowbar,4.71,176,1.5,16
+New Orleans,Atracciones y cultura,New Orleans School of Cooking,4.7,529,0.8,17
+New Orleans,Restaurantes,Heard Dat Kitchen,4.7,579,1.6,18
+New Orleans,Atracciones y cultura,French Quarter Phantoms,4.7,1499,1.1,19
+New Orleans,Atracciones y cultura,Big Easy Bike Tours,4.68,69,2.7,20
+Philadelphia,Compras,KC Carpet and Upholstery Cleaners,4.81,258,18.0,1
+Philadelphia,Compras,Creative Silver,4.81,191,0.8,2
+Philadelphia,Restaurantes,Philly Foodworks,4.78,123,6.0,3
+Philadelphia,Restaurantes,The Sweet Life Bakeshop,4.78,327,1.4,4
+Philadelphia,Compras,Blinds Brothers,4.77,99,4.5,5
+Philadelphia,Compras,Wise Guy,4.76,128,1.9,6
+Philadelphia,Restaurantes,Christie's Deli,4.75,155,1.2,7
+Philadelphia,Restaurantes,Ice Cave,4.74,145,4.1,8
+Philadelphia,Restaurantes,ICI Macarons & Cafe,4.73,283,1.8,9
+Philadelphia,Restaurantes,2 Fat Dogs,4.73,87,19.2,10
+Philadelphia,Restaurantes,Czerw's Kielbasy,4.72,155,6.8,11
+Philadelphia,Compras,D'Antonio & Klein Jewelers,4.72,150,1.1,12
+Philadelphia,Compras,Snyder Opticians,4.7,79,0.6,13
+Philadelphia,Compras,SUGARED + BRONZED,4.7,547,0.6,14
+Philadelphia,Restaurantes,Tortilleria San Roman,4.7,226,1.8,15
+Philadelphia,Compras,Trend Eye Care,4.7,198,2.8,16
+Philadelphia,Compras,William Schwartz Jewelry,4.7,131,0.5,17
+Philadelphia,Atracciones y cultura,Free Tours By Foot,4.7,187,1.7,18
+Philadelphia,Restaurantes,Miss Rachel's Pantry,4.68,129,3.0,19
+Philadelphia,Restaurantes,D'Ascenzo's Gelato,4.67,97,37.3,20
+Tucson,Restaurantes,Tumerico,4.82,724,3.8,1
+Tucson,Restaurantes,Barrio Bread,4.81,230,4.4,2
+Tucson,Restaurantes,Barista Del Barrio,4.75,367,2.0,3
+Tucson,Restaurantes,Plaza Liquors & Fine Wines,4.74,146,4.6,4
+Tucson,Restaurantes,Urban Fresh,4.74,204,0.4,5
+Tucson,Restaurantes,Blue Ice Gelato,4.73,143,15.4,6
+Tucson,Atracciones y cultura,Tucson Food Tours,4.7,79,0.9,7
+Tucson,Restaurantes,Raptor Canyon Cafe,4.68,83,0.5,8
+Tucson,Atracciones y cultura,Fox In a Box Tucson,4.65,79,1.9,9
+Tucson,Restaurantes,The Quesadillas,4.63,517,9.9,10
+Tucson,Restaurantes,El Antojo Poblano,4.63,63,1.5,11
+Tucson,Vida nocturna,Splitting Timber Axe Range Tucson,4.62,80,20.9,12
+Tucson,Hospedaje,Hotel McCoy,4.6,226,2.6,13
+Tucson,Vida nocturna,The Scented Leaf,4.6,188,1.9,14
+Tucson,Compras,J Bridal Boutique,4.58,42,11.8,15
+Tucson,Compras,Eco Gro,4.58,77,0.9,16
+Tucson,Restaurantes,Pizza Luna,4.58,260,11.0,17
+Tucson,Restaurantes,Yellow Brick Coffee,4.57,109,7.0,18
+Tucson,Restaurantes,Baja Cafe,4.57,1130,12.4,19
+Tucson,Vida nocturna,The Blacktop Grill,4.57,100,16.5,20
+Boise,Atracciones y cultura,A New Twist Balloons and Face Painting,4.88,285,1.1,1
+Boise,Restaurantes,Tangos Empanadas,4.69,450,3.4,2
+Boise,Restaurantes,The STIL,4.68,320,0.3,3
+Boise,Restaurantes,Epi's A Basque Restaurant,4.65,310,15.3,4
+Boise,Restaurantes,Koco Bell,4.61,57,12.6,5
+Boise,Restaurantes,Cucina Di Paolo,4.61,216,2.8,6
+Boise,Restaurantes,Petite 4,4.6,127,2.4,7
+Boise,Restaurantes,Alyonka Russian Cuisine,4.59,110,2.7,8
+Boise,Restaurantes,Island Sushi & Ramen,4.59,329,7.1,9
+Boise,Restaurantes,Neighbor Tim's BBQ,4.58,140,7.0,10
+Boise,Restaurantes,The Empanada Club,4.57,80,14.1,11
+Boise,Restaurantes,Lemon Tree,4.57,206,0.4,12
+Boise,Vida nocturna,Han's Chimaek,4.57,82,2.7,13
+Boise,Aire libre,Boise River Greenbelt,4.57,56,0.9,14
+Boise,Vida nocturna,Barbarian Brewing Downtown Taproom,4.55,76,0.4,15
+Boise,Atracciones y cultura,Pedego Electric Bikes Boise,4.54,45,2.3,16
+Boise,Restaurantes,Kibrom's Restaurant,4.54,177,3.6,17
+Boise,Atracciones y cultura,Bosnia Express Boex,4.54,113,3.2,18
+Boise,Restaurantes,Egg Mann and Earl,4.53,213,4.5,19
+Boise,Compras,Lunchbox Wax Boise - Downtown,4.52,71,0.0,20
+St. Louis,Atracciones y cultura,Forest Park,4.81,319,7.5,1
+St. Louis,Atracciones y cultura,Cathedral Basilica of Saint Louis,4.77,149,5.1,2
+St. Louis,Restaurantes,Kounter Kulture,4.77,344,9.5,3
+St. Louis,Vida nocturna,Blues City Deli,4.77,1027,2.9,4
+St. Louis,Restaurantes,Teatopia,4.76,104,4.4,5
+St. Louis,Restaurantes,Balkan Treat Box,4.75,327,12.6,6
+St. Louis,Restaurantes,Sultān Mediterranean Restaurant,4.71,328,4.8,7
+St. Louis,Restaurantes,Songbird,4.71,101,5.3,8
+St. Louis,Restaurantes,The Foundry Bakery,4.71,197,21.3,9
+St. Louis,Restaurantes,Jafra Mediterranean Restaurant,4.71,124,35.3,10
+St. Louis,Restaurantes,Nathaniel Reid Bakery,4.7,473,19.2,11
+St. Louis,Restaurantes,Melo's Pizzeria,4.7,137,2.9,12
+St. Louis,Atracciones y cultura,Missouri Botanical Garden,4.7,499,5.2,13
+St. Louis,Atracciones y cultura,Hi-Pointe Theatre,4.67,125,9.2,14
+St. Louis,Restaurantes,Medina Mediterranean Grill,4.65,296,0.6,15
+St. Louis,Restaurantes,Sides Of Seoul,4.65,148,17.3,16
+St. Louis,Restaurantes,Akar,4.65,130,11.9,17
+St. Louis,Restaurantes,Edibles & Essentials,4.63,177,9.8,18
+St. Louis,Restaurantes,Craft Beer Cellar Clayton,4.63,78,12.7,19
+St. Louis,Restaurantes,Bogart's Smokehouse,4.63,1453,1.8,20
+Santa Barbara,Atracciones y cultura,Sustainable Wine Tours,4.91,365,0.7,1
+Santa Barbara,Atracciones y cultura,DeeTours of Santa Barbara,4.85,188,0.2,2
+Santa Barbara,Atracciones y cultura,Cal Coast Adventures,4.85,185,1.8,3
+Santa Barbara,Vida nocturna,Burgundy Blue Photography,4.85,178,0.5,4
+Santa Barbara,Atracciones y cultura,Jump On The School Bus,4.81,178,5.9,5
+Santa Barbara,Compras,ella & louie flowers,4.79,104,1.2,6
+Santa Barbara,Atracciones y cultura,Segway of Santa Barbara,4.78,168,1.1,7
+Santa Barbara,Atracciones y cultura,Santa Barbara Art Glass,4.78,205,1.5,8
+Santa Barbara,Atracciones y cultura,Wine Canyon Tours,4.75,155,4.1,9
+Santa Barbara,Restaurantes,Buena Onda,4.74,422,1.1,10
+Santa Barbara,Atracciones y cultura,Uncorked Wine Tasting and Kitchen,4.74,157,0.8,11
+Santa Barbara,Atracciones y cultura,Taste Santa Barbara Food Tours,4.74,126,1.2,12
+Santa Barbara,Atracciones y cultura,I Bike Santa Barbara Wine Country Tours,4.73,80,1.9,13
+Santa Barbara,Compras,Twisted Twig Fine Florals,4.72,74,0.0,14
+Santa Barbara,Atracciones y cultura,Santa Barbara Adventure Company,4.72,199,0.5,15
+Santa Barbara,Hospedaje,UC Santa Barbara Family Vacation Center,4.72,102,13.5,16
+Santa Barbara,Compras,GadgetFix,4.71,140,1.9,17
+Santa Barbara,Restaurantes,Tondi Gelato,4.71,105,0.2,18
+Santa Barbara,Atracciones y cultura,Preferred Limousine & Transportation,4.71,86,0.3,19
+Santa Barbara,Restaurantes,ParadICE Hawaiian Shave Ice & Ice Cream,4.7,194,0.2,20

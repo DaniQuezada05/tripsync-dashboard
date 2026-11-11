@@ -1,0 +1,41 @@
+zona,estado_vuelo,vuelos
+Boise,Retrasado,4469
+Boise,Desviado,38
+Boise,A tiempo,18932
+Boise,Cancelado,90
+Indianapolis,Cancelado,806
+Indianapolis,A tiempo,35803
+Indianapolis,Retrasado,10664
+Indianapolis,Desviado,72
+Nashville,A tiempo,80506
+Nashville,Desviado,309
+Nashville,Cancelado,1292
+Nashville,Retrasado,23125
+New Orleans,Desviado,110
+New Orleans,Cancelado,841
+New Orleans,A tiempo,38630
+New Orleans,Retrasado,11540
+Philadelphia,A tiempo,71906
+Philadelphia,Retrasado,23352
+Philadelphia,Desviado,218
+Philadelphia,Cancelado,2034
+Reno,Desviado,91
+Reno,Cancelado,200
+Reno,Retrasado,4207
+Reno,A tiempo,16430
+Santa Barbara,Cancelado,85
+Santa Barbara,A tiempo,6565
+Santa Barbara,Desviado,52
+Santa Barbara,Retrasado,1534
+St. Louis,A tiempo,50446
+St. Louis,Retrasado,12784
+St. Louis,Cancelado,858
+St. Louis,Desviado,117
+Tampa,Retrasado,19035
+Tampa,A tiempo,59264
+Tampa,Desviado,208
+Tampa,Cancelado,939
+Tucson,A tiempo,15949
+Tucson,Retrasado,4017
+Tucson,Cancelado,174
+Tucson,Desviado,10
